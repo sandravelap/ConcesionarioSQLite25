@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/6940d980-b6d4-4c42-8bda-4f016dc37c31/console.sql" value="6940d980-b6d4-4c42-8bda-4f016dc37c31" />
+    <file url="file://$PROJECT_DIR$/src/main/java/repositories/DeleteVentas.java" value="6940d980-b6d4-4c42-8bda-4f016dc37c31" />
+    <file url="file://$PROJECT_DIR$/src/main/java/repositories/InsertarClientesDB.java" value="6940d980-b6d4-4c42-8bda-4f016dc37c31" />
+    <file url="file://$PROJECT_DIR$/src/main/java/repositories/InsertarCochesDB.java" value="6940d980-b6d4-4c42-8bda-4f016dc37c31" />
+    <file url="file://$PROJECT_DIR$/src/main/java/repositories/InsertarVentasDB.java" value="6940d980-b6d4-4c42-8bda-4f016dc37c31" />
+    <file url="file://$PROJECT_DIR$/src/main/java/repositories/SelectClientes.java" value="6940d980-b6d4-4c42-8bda-4f016dc37c31" />
+    <file url="file://$PROJECT_DIR$/src/main/java/repositories/SelectCoches.java" value="6940d980-b6d4-4c42-8bda-4f016dc37c31" />
+    <file url="file://$PROJECT_DIR$/src/main/java/repositories/SelectVentas.java" value="6940d980-b6d4-4c42-8bda-4f016dc37c31" />
+    <file url="file://$PROJECT_DIR$/src/main/java/repositories/UpdateCoches.java" value="6940d980-b6d4-4c42-8bda-4f016dc37c31" />
     <file url="file://$PROJECT_DIR$/src/main/resources/ConcesionarioSQLite.sql" value="6940d980-b6d4-4c42-8bda-4f016dc37c31" />
   </component>
 </project>

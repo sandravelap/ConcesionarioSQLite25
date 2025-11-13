@@ -37,7 +37,9 @@ public class SelectCoches {
             pst.setInt(1, idCoche);
             ResultSet rs = pst.executeQuery();
             if(rs.next()){
-                cocheDisponible=rs.getBoolean("disponible");
+                if (rs.getInt("disponible")==1){
+                    cocheDisponible=true;
+                }
             }
         }catch(SQLException e){
             cocheDisponible=false;

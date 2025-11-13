@@ -21,7 +21,7 @@ public class InsertarCochesDB {
             pst.setShort(4,coche.getAnio());
             pst.setString(5,coche.getBastidor());
             pst.setDouble(6,coche.getPrecio());
-            pst.setBoolean(7,coche.isDisponible());
+            pst.setInt(7,coche.isDisponible());
             pst.executeUpdate();
             respuesta = true;
         } catch (SQLException e) {

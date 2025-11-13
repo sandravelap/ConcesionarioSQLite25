@@ -7,7 +7,7 @@ public class Coche {
     private Short anio;
     private String bastidor;
     private Double precio;
-    private boolean disponible;
+    private Integer disponible;
 
     public Coche() {
     }
@@ -60,11 +60,11 @@ public class Coche {
         this.precio = precio;
     }
 
-    public boolean isDisponible() {
+    public Integer isDisponible() {
         return disponible;
     }
 
-    public void setDisponible(boolean disponible) {
+    public void setDisponible(Integer disponible) {
         this.disponible = disponible;
     }
 }

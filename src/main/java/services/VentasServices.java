@@ -16,35 +16,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class VentasServices {
-    public static StringBuilder insertarVentaService(Path pathCsv){
-        StringBuilder respuestaCliente = new StringBuilder();
-        Venta ventaAux;
-        InsertarVentasDB insertarVentasDB = new InsertarVentasDB();
-        if (Files.isReadable(pathCsv)) {
-            try {
-                List<String> ventasCsv = Files.readAllLines(pathCsv);
-                ventasCsv.removeFirst();
-                for (String ventaCsv : ventasCsv) {
-                    ventaAux = new Venta();
-                    ventaAux.setIdVenta(Integer.valueOf(ventaCsv.split(",")[0]));
-                    ventaAux.setIdCoche(Integer.valueOf(ventaCsv.split(",")[1]));
-                    ventaAux.setIdCliente(Integer.valueOf(ventaCsv.split(",")[2]));
-                    ventaAux.setFechaVenta(Date.valueOf(ventaCsv.split(",")[3]));
-                    ventaAux.setPrecioFinal(Double.valueOf(ventaCsv.split(",")[4]));
-                    if (insertarVentasDB.insertVenta(ventaAux)){
-                        respuestaCliente.append("Venta ").append(ventaAux.getIdCoche()).append(" insertada correctamente\n");
-                    }else{
-                        respuestaCliente.append("Venta ").append(ventaAux.getIdCoche()).append(" NO insertada correctamente\n");
-                    }
-                }
-            } catch (IOException e) {
-                respuestaCliente.append("Error al leer el archivo");
-            }
-        }else{
-            respuestaCliente.append("Error de lectura del archivo csv. ");
-        }
-        return respuestaCliente;
-    }
+
     public static StringBuilder insertarNuevaVenta(VentaDTO nuevaVenta){
         StringBuilder respuestaCliente = new StringBuilder();
         InsertarVentasDB insertarVentasDB = new InsertarVentasDB();
